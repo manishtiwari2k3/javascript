@@ -1,5 +1,7 @@
 // for newer version of javascript
+
 "use strict";
+
 // as bohot sara code humara javascript ke older versions mai likha hua tha but due to new versions vo sara code easily usabe ban gaya
 // par javascript nahi chahti thi ki purane code mai koi changes ho toh "use strict" method banaya gya jisse ki hum apne sare code ko
 // newer version k hisab se likh sakte hain

@@ -2,12 +2,12 @@ let score ;
 console.log(score);
 console.log(typeof score);
 console.log(typeof(score));
-let value = Number(score);
+// let value = Number(score);
 console.log(value);
 console.log(typeof value);
 console.log(typeof(value));
 
-let score = "hitesh"
+// let score = "hitesh"
 
 //console.log(typeof score);
 //console.log(typeof(score));

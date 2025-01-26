@@ -74,6 +74,8 @@ function loginUserMessage(username = "sam"){
 
 // console.log(loginUserMessage("hitesh"))
 // console.log(loginUserMessage("hitesh"))
+console.log(loginUserMessage()) // jab hum aise hi kuch bhi nahi pass karte function ke parameter mai then usse hume undefined value
+// milti hai
 
 
 function calculateCartPrice(val1, val2, ...num1){

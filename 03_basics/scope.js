@@ -39,6 +39,13 @@ function one(){
 
 }
 
+// jo parent ke andar values hai vo acces kar skta hai child in terms of scope
+// lekin
+// jo child ke andar values hai vo parent access nahi kar skta
+
+
+// javascript ke andar variables kuch b hold kar skte hai like arrays , json files etc.
+
 // one()
 
 if (true) {
@@ -58,6 +65,8 @@ if (true) {
 
 console.log(addone(5))
 
+//  jab hum kisi variable mai nahi dalre function ko toh hum use uski declaration se pehle bhi access kar skte hai
+
 function addone(num){
     return num + 1
 }
@@ -65,6 +74,10 @@ function addone(num){
 
 
 addTwo(5)
+
+// but jab hum use kisi variable ke andar daal de rahe hai toh hum use aise access nahi kar skte jab hum variable ke andar
+// function ko daal dete hai toh vo expression ban jate hain aur expression ko hum declaration se pehle access nahi kar skte
+
 const addTwo = function(num){
     return num + 2
 }

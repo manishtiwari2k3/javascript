@@ -1,0 +1,93 @@
+<!-- javascript -->
+
+<!-- 
+javascript is synchronous in nature
+        -> code is executed one after the other not many code can be executed ar once unlike other programming languages
+        which are multi threaded multiple threads are operated at once
+it is a single threaded language
+
+
+it is all about the default javascript
+ -->
+
+
+<!-- default is not always working  -->
+
+<!-- then there comes the execution context -->
+
+<!-- executon context -->
+<!-- 
+    executes one line of code at a time
+    // jab tak purana operation execute nahi hogya hai tab tak naye operation pa nahi jaya jata hai
+
+    each operation waits for the last one to complete before execution
+
+     -->
+
+
+
+<!-- there are two types of code that can be written in our programming language js
+    1. blocking code
+    2. non blocking code
+ -->
+
+
+<!-- blocking code -->
+<!--  it blocks the flow of the complete program and wait form the specified amount of time
+   read file synchronously -->
+
+
+<!-- non blocking code -->
+<!-- does not block execution
+  read file asynchronously -->
+
+
+<!-- both blocking and the non blocking code have their own use cases we cant say that anyone of them is best -->
+<!-- we use them according to our need -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <h1>hello</h1>
+   <script>
+      // setTimeout() 
+      // ye set timeout bhi 1 function hai jo ki web api ke through hume milte hain
+      // set timeout karta kya hai
+      // ye 1 handler accept karta hai apne andar  handler basically 1 function hi hota hai
+      // handler function ke baad hume timeout dena hota hai jo ki ms mai hota hai
+      setTimeout(() => {
+         console.log("manish");
+      }, 2000)
+
+      // set timeout ko hum apply toh ase kar sakte hai lekin kafi baar aisi situations aajati hai jab hume use pause karna hota hai
+      // toh vo hum kaise kar sakte hain
+
+      // we can do this by clear time out function
+
+      // clearTimeout directly execute nahi hota iske andar hume 
+      // setTimeout ka reference dena hota hai ki konse setTimeout ko clear karna hai
+
+      const sayHitesh = function () {
+         console.log("Hitesh");
+      }
+      const changeText = function () {
+         document.querySelector('h1').innerHTML = "best JS series"
+      }
+
+      const changeMe = setTimeout(changeText, 2000)
+
+      document.querySelector('#stop').addEventListener('click', function () {
+         clearTimeout(changeMe)
+         console.log("STOPPED")
+      })
+   </script>
+</body>
+
+</html>

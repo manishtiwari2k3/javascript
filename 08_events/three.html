@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chai Aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+        // jaise abi tak humne set interval function dekha usme 1 handler aur time dikhaya in the same way ek aur function hota hai
+        // setInterval function
+        // setInterval function bhi web api ke through milta hai
+        // setInterval function bhi 1 handler accept karta hai
+        // setInterval function bhi 1 time accept karta hai
+        // setInterval function basically 2 parameter accept karta hai
+        // 1. handler
+        // 2. time
+        // ye repeat hota rahega jab tak hum ise stop nahi karte
+        // setInterval function basically 1 infinite loop hota hai
+
+        const sayDat = setInterval(() => {
+            console.log("manish", Date.now());
+        }, 1000)
+
+
+            // like set interval infine time ke liye run karne ke liye use hota hai after a specified number of seconds
+            // clearInterval function is used to stop the setInterval function
+            // and it takes reference of the setInterval function as an argument to stop it
+
+            < !DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Document</title>
+                            </head>
+                            <body>
+                                <h1>Chai aur Javascript</h1>
+                                <button id="start">Start</button>
+                                <button id="stop">Stop</button>
+                            </body>
+                            <script>
+                                const sayDate = function(str){
+                                    console.log(str, Date.now());
+    }
+
+                                const intervalId = setInterval(sayDate, 1000, "hi")
+
+                                clearInterval(intervalId)
+    </script>
+
+</html>
+</script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- hum kuch apis ko randomly access kar sakte hai
+     jaise github bhi hume ek default api provide karta hai
+     *****************************api.github.com/users/hitshchaudhary
+     ******************************random user generator api
+     ye second vale ke through hum random apis ko dekh sakte hai aur use kar sakte hai
+
+
+     lekin ye jo api hoti hai ise hum padhenge kaise
+     kuki iske andar kaafi chize hoti hai string ke andar object vgrh etc. etc.
+     toh ise padhne ke liye aur smjhne ke liye hum ek website ka use kate hai which is json formatter
+     
+     -->
+
+     <!-- now we will learn about sending api requests -->
+
+     <!-- abhi aaj ke time pe fetch is used to send api requests
+      but previously when fetch is not present api requests are sent with the help of xml -->
+      <!-- search -> xmlhttprequest in browser -->
+       <!-- xmlhttprequest is heavily ajax related programming  -->
+
+       0	UNSENT	Client has been created. open() not called yet.
+       1	OPENED	open() has been called.
+       2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+       3	LOADING	Downloading; responseText holds partial data.
+       4	DONE	The operation is complete.
+
+       <script>
+        //  xmlhttprequest -> ye basically 1 method hota hai jiske andar ye sari states present hoti hai
+        // iske through hum api requests bhej sakte hai aur receive kar sakte hai
+        // aur bhi bhot saare tarike hote hai but mostly yahi use hota hai
+
+        // XMLHttpRequest() ye basically ek class hai toh iska 1 object bannaa padta hai
+        // we have to use this with the help of new keyword
+        const requestUrl = 'https://api.github.com/users/hitshchaudhary';
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestUrl);
+        // sirf itne se ye call nahi hota hai
+        // iske liye hume send() method ko call karna padta hai tabi ye call hota hai
+       </script>
+</body>
+</html>
